@@ -35,7 +35,7 @@ public class MobileLogin {
                 .until(ExpectedConditions.visibilityOfElementLocated(By.id("kz.bcc.starbanking.stage:id/fragment_container")));
         WebElement bills = driver.findElement(By.id("kz.bcc.starbanking.stage:id/navigation_bar_item_large_label_view"));
         String results = bills.getText();
-//        System.out.println(results);
+        System.out.println(results);
         Assert.assertEquals("Should be bills", "Счета", results);
     }
 
